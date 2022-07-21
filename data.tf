@@ -23,7 +23,7 @@ resource "aws_instance" "web" {
   }
 }
 
-data "aws_vpc" "talent_academy" {
+data "aws_vpc" "talent_academy" 
   filter {
     name = "tag:Name"
     values = "lab_vpc"
