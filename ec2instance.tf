@@ -1,4 +1,4 @@
-resource "aws_instance" "web1" {
+resource "aws_instance" "ansible_server" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t3.micro"
 

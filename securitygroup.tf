@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow_tls" {
   name        = "ansible_server"
   description = "Allow connection for ansible inbound traffic"
-  vpc_id      = data.aws_vpc.talent_academy.id
+  vpc_id      = data.aws_vpc.lab_vpc.id
 
   ingress {
     description      = "allow port 80"
@@ -28,6 +28,6 @@ resource "aws_security_group" "allow_tls" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "ansible_server"
   }
 }
