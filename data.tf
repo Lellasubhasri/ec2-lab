@@ -15,9 +15,9 @@ data "aws_vpc" "lab_vpc" {
     values = ["lab_vpc"]
   }
 }
-  data "aws_subnet" "public" {
+  data "aws_subnet" "Public" {
   filter {
     name = "tag:Name"
-    values = ["public"]
+    values = ["Public"]
   }
 }

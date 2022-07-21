@@ -1,4 +1,4 @@
-resource "aws_security_group" "allow_tls" {
+resource "aws_security_group" "ansible_server" {
   name        = "ansible_server"
   description = "Allow connection for ansible inbound traffic"
   vpc_id      = data.aws_vpc.lab_vpc.id

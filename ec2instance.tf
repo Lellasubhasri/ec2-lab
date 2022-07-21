@@ -4,7 +4,7 @@ resource "aws_instance" "ansible_server" {
 
   vpc_security_group_ids = [aws_security_group.ansible_server.id]
   key_name = "talent-academy-lab"
-  subnet_id = data.aws_subnet.public.id
+  subnet_id = data.aws_subnet.Public.id
 
   tags = {
     Name = "HelloSubhasri"
